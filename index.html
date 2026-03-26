@@ -74,7 +74,7 @@ nav.scrolled{box-shadow:var(--sh)}
 
 /* ══ HERO ══ */
 .hero{position:relative;min-height:600px;display:flex;align-items:center;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background:url('team.webp') center/cover no-repeat}
+.hero-bg{position:absolute;inset:0;background:url('team.webp') center top/cover no-repeat}
 .hero-glow{position:absolute;inset:0;background:rgba(0,0,0,0.55)}
 .hero-content{position:relative;z-index:2;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;padding:96px 0}
 .hero-sub{font-size:.86rem;font-weight:600;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.75);margin-bottom:18px}
@@ -295,9 +295,9 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:56px 0 0}
   .ncta{margin-left:0;margin-top:8px;display:block;text-align:center;width:100%}
   .ham{display:flex}
   /* Hero */
-  .hero{min-height:auto}
+  .hero{min-height:auto;overflow:hidden}
   .hero-content{padding:52px 0 48px;gap:32px}
-  .hero h1{font-size:2rem}
+  .hero h1{font-size:1.8rem;word-break:break-word}
   .hero-p{font-size:.95rem;margin-bottom:28px}
   .hero-btns{flex-direction:column;gap:10px}
   .hero-btns .btn{width:100%;justify-content:center}
@@ -326,13 +326,14 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:56px 0 0}
   .foot-b{flex-direction:column;gap:14px;text-align:center}
 }
 @media(max-width:480px){
+  .hero-bg{background-position:50% 25%}
   section{padding:48px 0}
   .ctn{padding:0 14px}
   .nav-in{height:64px}
   .nav-logo{height:44px}
   .nav-brand{font-size:.95rem}
   .hero-content{padding:44px 0 40px}
-  .hero h1{font-size:1.75rem}
+  .hero h1{font-size:1.5rem;word-break:break-word}
   .hero-sub{font-size:.78rem}
   .strip-in{grid-template-columns:1fr}
   .si:nth-child(odd){border-right:none}
