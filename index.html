@@ -92,6 +92,7 @@ nav.scrolled{box-shadow:var(--sh)}
 .b-outl:hover{border-color:#fff;transform:translateY(-1px)}
 
 .hero-cards{display:flex;flex-direction:column;gap:18px}
+.hero-team-img{display:none}
 .hcard{background:var(--w);border:1px solid var(--g100);border-radius:8px;padding:24px 28px;display:flex;align-items:center;gap:18px;transition:box-shadow .3s,transform .3s;box-shadow:var(--sh)}
 .hcard:hover{box-shadow:var(--shl);transform:translateY(-2px)}
 .hcard-ic{width:48px;height:48px;border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
@@ -295,12 +296,15 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:56px 0 0}
   .ncta{margin-left:0;margin-top:8px;display:block;text-align:center;width:100%}
   .ham{display:flex}
   /* Hero */
-  .hero{min-height:auto;overflow:hidden}
-  .hero-content{padding:52px 0 48px;gap:32px}
-  .hero h1{font-size:1.8rem;word-break:break-word}
-  .hero-p{font-size:.95rem;margin-bottom:28px}
+  .hero{min-height:auto;overflow:visible}
+  .hero-bg{background:var(--dark2)}
+  .hero-glow{background:rgba(0,0,0,0.15)}
+  .hero-content{padding:44px 0 48px;gap:20px;display:flex;flex-direction:column}
+  .hero h1{font-size:1.85rem}
+  .hero-p{font-size:.95rem;margin-bottom:24px}
   .hero-btns{flex-direction:column;gap:10px}
   .hero-btns .btn{width:100%;justify-content:center}
+  .hero-team-img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 15%;border-radius:10px}
   .hcard{padding:16px 18px;gap:14px}
   .hcard h4{font-size:.9rem}
   /* Strip */
@@ -326,7 +330,6 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:56px 0 0}
   .foot-b{flex-direction:column;gap:14px;text-align:center}
 }
 @media(max-width:480px){
-  .hero-bg{background-position:50% 25%}
   section{padding:48px 0}
   .ctn{padding:0 14px}
   .nav-in{height:64px}
@@ -413,6 +416,7 @@ footer{background:var(--dark);color:rgba(255,255,255,.5);padding:56px 0 0}
       <a href="#tjenester" class="btn b-outl">Se våre tjenester</a>
     </div>
   </div>
+  <img class="hero-team-img" src="team.webp" alt="Marcus og Theo – Sesong Tjenester">
   <div class="hero-cards">
     <div class="hcard"><div class="hcard-ic cb"><svg fill="none" stroke="var(--blue)" stroke-width="2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg></div><div><h4>Personlig oppfølging</h4><p>Du snakker alltid direkte med oss</p></div></div>
     <div class="hcard"><div class="hcard-ic cg"><svg fill="none" stroke="var(--green)" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><div><h4>Ingen skjulte kostnader</h4><p>Klar pris før vi starter arbeidet</p></div></div>
